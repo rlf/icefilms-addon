@@ -226,7 +226,7 @@ class GoogleSearch(object):
         return {'from': int(matches.group(1)), 'to': int(matches.group(2)), 'total': int(matches.group(3))}
 
     def _extract_results(self, soup):
-        results = soup.findAll('li', {'class': 'g'})
+        results = soup.findAll('li', 'g')
         ret_res = []
         for result in results:
             eres = self._extract_result(result)
@@ -256,7 +256,7 @@ class GoogleSearch(object):
         return title, url
 
     def _extract_description(self, result):
-        desc_div = result.find('div', {'class': re.compile(r'\bs\b')})
+        desc_div = result.find('span', 'st')
         if not desc_div:
             self._maybe_raise(ParseError, "Description tag in Google search result was not found", result)
             return None
