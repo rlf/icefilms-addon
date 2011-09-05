@@ -1,0 +1,17 @@
+<app>
+  <id>plugin.video.icefilms</id>
+  <name>Icefilms.Info</name>
+  <version>1.2</version>
+  <description>IceFilms.Info Addon for Boxee Box</description>
+  <thumb>http://www.lockfuglsang.dk/boxee/icefilms.png</thumb>
+  <repositoryId>dk.lockfuglsang</repositoryId>
+  <repository>http://www.lockfuglsang.dk/boxee</repository>
+  <media>video</media>
+  <copyright></copyright>
+  <email></email>
+  <type>skin</type>
+  <startWindow>14000</startWindow>
+  <platform>all</platform>
+  <minversion>0.9</minversion>
+  <test-app>true</test-app>
+</app>
